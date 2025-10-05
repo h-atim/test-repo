@@ -1,15 +1,13 @@
-# root-sync.yaml
+# cc-rootsync.yaml
 apiVersion: configsync.gke.io/v1beta1
 kind: RootSync
 metadata:
   name: root-sync
   namespace: config-management-system
 spec:
-  sourceType: git
   sourceFormat: unstructured
   git:
-    repo: https://github.com//h-atim/test-repo
+    repo: https://github.com/GoogleCloudPlatform/anthos-config-management-samples
     branch: main
-    dir: /
+    dir: config-controller-quickstart
     auth: none
-    period: 30s
