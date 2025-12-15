@@ -1,0 +1,25 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: cis-gke-v1.5.0
+upstream:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/gke-policy-library
+    directory: /anthos-bundles/cis-gke-v1.5.0
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/gke-policy-library
+    directory: /anthos-bundles/cis-gke-v1.5.0
+    ref: main
+    commit: 002711550f4f3546af8958b586f88e84b5a7dc47
+info:
+  description: CIS GKE Benchmark v1.5.0
+pipeline:
+  mutators:
+    - image: gcr.io/kpt-fn/set-enforcement-action:v0.1
+      configMap:
+        enforcementAction: dryrun
