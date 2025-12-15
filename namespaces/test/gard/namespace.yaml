@@ -12,19 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START anthosconfig_namespace_inheritance_config_namespaces_rnd_role] 
-kind: Role
-apiVersion: rbac.authorization.k8s.io/v1
+# [START anthosconfig_namespace_inheritance_config_namespaces_rnd_namespace_incubator_2] 
+apiVersion: v1
+kind: Namespace
 metadata:
-   name: incubator-1-admin
-rules:
-- apiGroups: [""]
-  resources: ["pods"]
-  verbs: ["*"]
-- apiGroups: [""]
-  resources: ["namespaces"]
-  verbs: ["get"]
-- apiGroups: ["rbac.authorization.k8s.io"]
-  resources: ["roles", "rolebindings"]
-  verbs: ["get", "list"]
-# [END anthosconfig_namespace_inheritance_config_namespaces_rnd_role] 
+   name: gard-tst
+# [END anthosconfig_namespace_inheritance_config_namespaces_rnd_namespace_incubator_2] 

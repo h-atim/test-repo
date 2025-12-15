@@ -12,9 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START anthosconfig_namespace_inheritance_config_namespaces_rnd_namespace_incubator_2] 
+# [START anthosconfig_namespace_inheritance_config_namespaces_eng_gamestore_namespace] 
 apiVersion: v1
 kind: Namespace
 metadata:
-   name: incubator-2
-# [END anthosconfig_namespace_inheritance_config_namespaces_rnd_namespace_incubator_2] 
+  name: gard
+  labels:
+    app: gard
+  annotations:
+    internal: "true"
+# [END anthosconfig_namespace_inheritance_config_namespaces_eng_gamestore_namespace] 

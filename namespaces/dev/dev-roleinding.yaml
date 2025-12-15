@@ -12,13 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START anthosconfig_namespace_inheritance_config_namespaces_eng_gamestore_namespace] 
-apiVersion: v1
-kind: Namespace
+# [START anthosconfig_namespace_inheritance_config_namespaces_eng_role_binding] 
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: gamestore
-  labels:
-    app: gamestore
-  annotations:
-    retail: "true"
-# [END anthosconfig_namespace_inheritance_config_namespaces_eng_gamestore_namespace] 
+  name: dev-admin
+subjects:
+  - kind: Group
+    name: gcp-devops@tmken-sandbox.cntxtcloud.com
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: dev-viewer
+  apiGroup: rbac.authorization.k8s.io
+# [END anthosconfig_namespace_inheritance_config_namespaces_eng_role_binding] 

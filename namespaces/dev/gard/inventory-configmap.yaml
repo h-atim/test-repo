@@ -12,13 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START anthosconfig_namespace_inheritance_config_namespaces_eng_role] 
-apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
-metadata:
-  name: eng-viewer
-rules:
-  - apiGroups: [""]
-    resources: ["*"]
-    verbs: ["get", "list"]
-# [END anthosconfig_namespace_inheritance_config_namespaces_eng_role] 
+# [START anthosconfig_namespace_inheritance_config_namespaces_eng_gamestore_configmap_store_inventory] 
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   name: store-inventory
+#   annotations:
+#     marketplace.com/comments: "Too much sci-fi"
+# data:
+#   action: "30"
+#   documentary: "5"
+#   sci_fi: "1000"
+# [END anthosconfig_namespace_inheritance_config_namespaces_eng_gamestore_configmap_store_inventory] 

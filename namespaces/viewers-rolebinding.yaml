@@ -19,7 +19,7 @@ metadata:
   name: viewers
 subjects:
 - kind: Group
-  name: system:serviceaccounts:foo
+  name: gcp-devops@tmken-sandbox.cntxtcloud.com
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole

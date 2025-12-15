@@ -16,20 +16,20 @@
 kind: NamespaceSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: analytics-selector
+  name: gard-selector
 spec:
   selector:
     matchLabels:
-      app: analytics
+      app: gard
 # [END anthosconfig_namespace_inheritance_config_namespaces_eng_namespace_selector_analytics] 
 ---
 # [START anthosconfig_namespace_inheritance_config_namespaces_eng_namespace_selector_gamestore] 
 kind: NamespaceSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: gamestore-selector
+  name: sp-selector
 spec:
   selector:
     matchLabels:
-      app: gamestore
+      app: sp
 # [END anthosconfig_namespace_inheritance_config_namespaces_eng_namespace_selector_gamestore] 

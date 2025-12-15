@@ -13,14 +13,14 @@
 # limitations under the License.
 
 # [START anthosconfig_namespace_inheritance_config_namespaces_eng_network_policy_allow_gamestore_ingress] 
-kind: NetworkPolicy
-apiVersion: networking.k8s.io/v1
-metadata:
-  name: allow-gamestore-ingress
-spec:
-  podSelector:
-    matchLabels:
-      app: gamestore
-  ingress:
-    - {}
+# kind: NetworkPolicy
+# apiVersion: networking.k8s.io/v1
+# metadata:
+#   name: allow-gamestore-ingress
+# spec:
+#   podSelector:
+#     matchLabels:
+#       app: gamestore
+#   ingress:
+#     - {}
 # [END anthosconfig_namespace_inheritance_config_namespaces_eng_network_policy_allow_gamestore_ingress] 
