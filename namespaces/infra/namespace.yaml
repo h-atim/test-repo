@@ -19,4 +19,5 @@ metadata:
   name: infra
   labels:
     app: infra
+    shared-gateway-access: "true"
 # [END anthosconfig_namespace_inheritance_config_namespaces_eng_analytics_namespace] 

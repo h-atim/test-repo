@@ -17,4 +17,6 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: sp-tst
+  labels:
+    shared-gateway-access: "true"
 # [END anthosconfig_namespace_inheritance_config_namespaces_rnd_namespace_incubator_1] 

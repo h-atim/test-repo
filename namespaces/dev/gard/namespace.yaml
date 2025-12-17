@@ -21,4 +21,5 @@ metadata:
     app: gard
   annotations:
     internal: "true"
+    shared-gateway-access: "true"
 # [END anthosconfig_namespace_inheritance_config_namespaces_eng_gamestore_namespace] 
