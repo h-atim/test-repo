@@ -21,9 +21,9 @@ metadata:
     configmanagement.gke.io/namespace-selector: gard-selector
 spec:
   hard:
-    pods: "1"
-    cpu: "100m"
-    memory: 100Mi
+    pods: "100"
+    cpu: "100"
+    memory: 50Gi
 # [END anthosconfig_namespace_inheritance_config_namespaces_eng_resource_quota_analytics_selector] 
 ---
 # [START anthosconfig_namespace_inheritance_config_namespaces_eng_resource_quota_gamestore_selector] 
