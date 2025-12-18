@@ -1,0 +1,24 @@
+kind: HTTPRoute
+apiVersion: gateway.networking.k8s.io/v1
+metadata:
+  name: store
+spec:
+  # Attach the HTTPRoute to a Gateway.
+  parentRefs:
+  - name: shared-gateway
+    namespace: infra
+  # Route requests that have `store.example.com` in the Host header.
+  hostnames:
+  - "store.example.com"
+  rules:
+  # Send requests with `/de` in the path to the `store-german` Service.
+  - matches:
+    - path:
+        value: /de
+    backendRefs:
+    - name: store-german
+      port: 8080
+  # Send unmatched requests to the store-v1 Service.
+  - backendRefs:
+    - name: store-v1
+      port: 8080
