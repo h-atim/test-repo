@@ -92,7 +92,7 @@ spec:
       - name: whereami
         image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
         ports:
-          - containerPort: 8080
+          - containerPort: 80
         env:
         - name: METADATA
           value: "Gutentag!"
@@ -106,5 +106,5 @@ spec:
     app: store
     version: german
   ports:
-  - port: 8080
-    targetPort: 8080
+  - port: 80
+    targetPort: 80
