@@ -1,7 +1,7 @@
 apiVersion: networking.gke.io/v1
 kind: HealthCheckPolicy
 metadata:
-  name: store-healthcheck
+  name: store-german-healthcheck
 spec:
   default:
     checkIntervalSec: 30
