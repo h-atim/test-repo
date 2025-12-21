@@ -19,4 +19,6 @@ metadata:
   name: default-deny-all-traffic
 spec:
   podSelector: {}
+  policyTypes:
+  - Ingress
 # [END anthosconfig_namespace_inheritance_config_namespaces_network_policy_default_deny_all_traffic] 
