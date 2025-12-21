@@ -20,5 +20,5 @@ metadata:
 spec:
   podSelector: {}
   policyTypes:
-  - Ingress
+  - Egress
 # [END anthosconfig_namespace_inheritance_config_namespaces_network_policy_default_deny_all_traffic] 
