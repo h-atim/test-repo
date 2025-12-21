@@ -9,7 +9,7 @@ spec:
     healthyThreshold: 2
     unhealthyThreshold: 5
     logConfig:
-      enabled: true
+      enabled: false
     config:
       type: TCP
       httpHealthCheck:
