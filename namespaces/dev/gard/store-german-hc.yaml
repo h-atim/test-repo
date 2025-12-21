@@ -18,4 +18,4 @@ spec:
   targetRef:
     group: ""
     kind: Service
-    name: store-v1
+    name: store-german
