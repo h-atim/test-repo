@@ -11,7 +11,7 @@ spec:
     logConfig:
       enabled: false
     config:
-      type: TCP
+      type: HTTP
       httpHealthCheck:
         port: 80
         requestPath: /
