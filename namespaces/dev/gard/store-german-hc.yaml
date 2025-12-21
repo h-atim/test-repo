@@ -13,8 +13,7 @@ spec:
     config:
       type: HTTP
       httpHealthCheck:
-        port: 80
-        host: "store.example.com"
+        port: 8080
         requestPath: /
   targetRef:
     group: ""
