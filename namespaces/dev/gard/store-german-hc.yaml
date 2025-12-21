@@ -14,7 +14,7 @@ spec:
       type: HTTP
       httpHealthCheck:
         port: 8080
-        requestPath: /
+        requestPath: /de
   targetRef:
     group: ""
     kind: Service

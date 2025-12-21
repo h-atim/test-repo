@@ -11,10 +11,10 @@ spec:
     logConfig:
       enabled: false
     config:
-      type: HTTP
+      type: TCP
       httpHealthCheck:
         port: 8080
-        requestPath: /de
+        requestPath: /
   targetRef:
     group: ""
     kind: Service
