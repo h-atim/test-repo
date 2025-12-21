@@ -9,9 +9,9 @@ spec:
     healthyThreshold: 2
     unhealthyThreshold: 5
     logConfig:
-      enabled: false
+      enabled: true
     config:
-      type: TCP
+      type: HTTP
       httpHealthCheck:
         port: 8080
         requestPath: /
