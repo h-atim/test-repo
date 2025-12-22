@@ -35,7 +35,7 @@ metadata:
     configmanagement.gke.io/namespace-selector: sp-selector
 spec:
   hard:
-    pods: "1"
-    cpu: "200m"
-    memory: 200Mi
+    pods: "20"
+    cpu: "100"
+    memory: 5Gi
 # [END anthosconfig_namespace_inheritance_config_namespaces_eng_resource_quota_gamestore_selector] 
