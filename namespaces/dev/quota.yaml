@@ -37,5 +37,5 @@ spec:
   hard:
     pods: "20"
     cpu: "100"
-    memory: 5Gi
+    memory: 50Gi
 # [END anthosconfig_namespace_inheritance_config_namespaces_eng_resource_quota_gamestore_selector] 
